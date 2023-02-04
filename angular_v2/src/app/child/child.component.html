@@ -1,0 +1,51 @@
+<h2>Child</h2>
+<br>
+
+<p>Name is {{nameInput}}</p>
+<br>
+<p>Mark is {{markInput}}</p>
+<br>
+
+<table class="table">
+
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Mark</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let item of tableData">
+    <td>{{item.name}}</td>
+    <td>{{item.mark}}</td>
+  </tr>
+  </tbody>
+
+</table>
+
+<input type="text" class="form-control" #name>
+<button type="submit" class="btn btn-primary mt-3"
+        (click)="updateTitleEvent.emit(name.value)">Submit
+</button>
+
+<br><br>
+<table class="table">
+
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Mark</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let item of tableData2">
+    <td>{{item.name}}</td>
+    <td>{{item.mark}}</td>
+  </tr>
+  </tbody>
+
+</table>
+
+<h2>{{myName}}</h2>

@@ -1,0 +1,10 @@
+<div class="card" [ngClass]="inputData.borderClass">
+  <div class="card-header">
+    <p>{{inputData.user}}</p>
+    <br>
+    <p>{{inputData.date}}</p>
+  </div>
+  <div class="card-body">
+    <p [style.color]="inputData.color">{{inputData.description}}</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Company Name</th>
+    <th>Client</th>
+    <th>Job Name</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let item of jobData">
+    <td>{{item.id}}</td>
+    <td>{{item.company_name}}</td>
+    <td>{{item.client}}</td>
+    <td>{{item.job_name}}</td>
+    <td><a routerLink="Edit/{{item.id}}">Edit</a></td>
+  </tr>
+  </tbody>
+
+</table>

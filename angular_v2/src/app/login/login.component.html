@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 mt-5">
+      <input type="text" #userName class="form-control" placeholder="username">
+      <input type="text" #userRole class="form-control mt-2" placeholder="role">
+      <br>
+      <a class="btn btn-primary" (click)="userLogin(userName.value,userRole.value)">Login</a>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,147 @@
+<!--<h1 appFontChange>{{title}}</h1>-->
+<!--<app-contact></app-contact>-->
+
+<!--<button type="button" class="btn btn-primary" (click)="getData('test')">Primary</button>-->
+<!--<input type="text" class="form-control" (keyup)="getData('keyup')">-->
+<!--<input type="text" class="form-control" [disabled]="itemDisable">-->
+<!--<input type="text" class="form-control" #name (blur)="getData(name.value)">-->
+
+<!--<div class="m-5">-->
+<!--    <input (change)="inputChange()" [(ngModel)]="inputValue" type="text" class="form-control" placeholder="Username">-->
+
+<!--    <app-popup></app-popup>-->
+<!--    <app-table [userTableData]="userList"></app-table>-->
+
+<!--      <table class="table">-->
+<!--        <thead>-->
+<!--        <tr>-->
+<!--          <th scope="col">Name</th>-->
+<!--          <th scope="col">Age</th>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+
+<!--        <tr *ngFor="let item of userList">-->
+<!--          <td>{{item.name}}</td>-->
+<!--          <td>{{item.age}}</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--      </table>-->
+
+
+<!--    <app-job-table [jobTableData]="jobList"></app-job-table>-->
+
+<!--    <button type="button" class="btn btn-primary" (click)="saveJobType()">Save</button>-->
+
+<!--    <h1>{{title | lowercase}}</h1>-->
+<!--    <h1>{{currentDate | date:'shortTime'}}</h1>-->
+<!--    <h1>{{amount | testcustompipe}}</h1>-->
+
+<!--      <input type="text" class="form-control" [(ngModel)]="typeData">-->
+<!--      <h3>{{typeData}}</h3>-->
+
+
+<!--  <div class="row">-->
+<!--    <h1>{{title}}</h1>-->
+<!--    &lt;!&ndash;  parent&ndash;&gt;-->
+<!--    <div class="col-md-6">-->
+<!--      <h2>Parent</h2>-->
+<!--      <form>-->
+<!--        <div class="form-group">-->
+<!--          <label>Name</label>-->
+<!--          <input type="text" class="form-control" #name>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--          <label>Mark</label>-->
+<!--          <input type="text" class="form-control" #marks>-->
+<!--        </div>-->
+
+<!--        <button type="submit" class="btn btn-primary mt-3"-->
+<!--                (click)="formSave({'name':name.value,'mark':marks.value})">Submit-->
+<!--        </button>-->
+<!--      </form>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;  child&ndash;&gt;-->
+<!--    <div class="col-md-6">-->
+<!--      <app-child [nameInput]="nameData" [markInput]="markData" (updateTitleEvent)="updateTitle($event)"></app-child>-->
+<!--    </div>-->
+
+<!--    <span>{{tableResponse}}</span>-->
+
+<!--  </div>-->
+
+
+<!--</div>-->
+
+<!--=============================================================================================================-->
+
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-primary">-->
+<!--  <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--    <ul class="navbar-nav">-->
+<!--      <li class="nav-item active">-->
+<!--        <a class="nav-link" routerLink="">Home</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" routerLink="about">About</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" routerLink="employee">Employee</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--</nav>-->
+
+<!--====================================================-->
+<!--<h2>Admin Module</h2>-->
+<!--<ul>-->
+<!--  <li><a routerLink="admin/dashboard">Dashboard</a></li>-->
+<!--  <li><a routerLink="admin/setting">Setting</a></li>-->
+<!--</ul>-->
+
+<!--<h2>Client Module</h2>-->
+<!--<ul>-->
+<!--  <li><a routerLink="client/dashboard">Dashboard</a></li>-->
+<!--  <li><a routerLink="client/setting">Setting</a></li>-->
+<!--</ul>-->
+
+<!--================================================================================-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="employee">User</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink=""><b>Home2</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact2"><b>Contact2</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="user2"><b>User2</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="login"><b>Login</b></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
