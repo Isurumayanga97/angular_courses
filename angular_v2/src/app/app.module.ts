@@ -31,41 +31,44 @@ import { UserviewComponent } from './userview/userview.component';
 import { UseraddComponent } from './useradd/useradd.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    StatusComponent,
-    ContactComponent,
-    HeaderComponent,
-    FontChangeDirective,
-    PopupComponent,
-    TableComponent,
-    JobTableComponent,
-    TestcustompipePipe,
-    ChildComponent,
-    HomeComponent,
-    AboutComponent,
-    EmployeeComponent,
-    ManageEmployeeComponent,
-    EmployeeListComponent,
-    EmployeeEditComponent,
-    ErrorComponent,
-    Home2Component,
-    Contact2Component,
-    User2Component,
-    LoginComponent,
-    UserviewComponent,
-    UseraddComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    // AdminRoutingModule,
-    // ClientRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        StatusComponent,
+        ContactComponent,
+        HeaderComponent,
+        FontChangeDirective,
+        PopupComponent,
+        TableComponent,
+        JobTableComponent,
+        TestcustompipePipe,
+        ChildComponent,
+        HomeComponent,
+        AboutComponent,
+        EmployeeComponent,
+        ManageEmployeeComponent,
+        EmployeeListComponent,
+        EmployeeEditComponent,
+        ErrorComponent,
+        Home2Component,
+        Contact2Component,
+        User2Component,
+        LoginComponent,
+        UserviewComponent,
+        UseraddComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        // AdminRoutingModule,
+        // ClientRoutingModule
+    ],
+    providers: [],
+    exports: [
+        PopupComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

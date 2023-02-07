@@ -1,0 +1,42 @@
+<button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#exampleModal">
+  Launch Modal
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Template driven form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form #empform="ngForm" (submit)="employeeSave(empform.value)">
+        <div class="modal-body">
+          <label>Code here</label>
+          <input name="code" #code="ngModel" disabled="disabled" class="form-control" ngModel>
+
+          <label>Name here</label>
+          <input name="name" required #name="ngModel" class="form-control" ngModel>
+          <span class="error-message" *ngIf="name.invalid && name.touched">Invalid Name</span>
+          <br>
+
+          <label>Designation</label>
+          <select class="form-control" name="designation" #designation="ngModel" ngModel>
+            <option value="">Select</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+          </select>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
